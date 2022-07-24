@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AquaLevelViewController: UIViewController {
+class AquaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
