@@ -13,6 +13,10 @@
 		7978BB1B288D1CE600B49BC2 /* TrainingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7978BB19288D1CE600B49BC2 /* TrainingApp.xcdatamodeld */; };
 		7978BB1D288D1CE800B49BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7978BB1C288D1CE800B49BC2 /* Assets.xcassets */; };
 		7978BB20288D1CE800B49BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7978BB1E288D1CE800B49BC2 /* LaunchScreen.storyboard */; };
+		798D0BE2288D3B880056A3B5 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE1288D3B880056A3B5 /* TimerViewController.swift */; };
+		798D0BE4288D3EE80056A3B5 /* AquaLevelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE3288D3EE80056A3B5 /* AquaLevelInteractor.swift */; };
+		798D0BE6288D3EF50056A3B5 /* AquaLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE5288D3EF50056A3B5 /* AquaLevelPresenter.swift */; };
+		798D0BE8288D3F060056A3B5 /* AquaLevelConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE7288D3F060056A3B5 /* AquaLevelConfigurator.swift */; };
 		79CDFF46288D2B8E0022F4DA /* GoalsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF45288D2B8E0022F4DA /* GoalsListViewController.swift */; };
 		79CDFF48288D2B970022F4DA /* GoalsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF47288D2B970022F4DA /* GoalsListPresenter.swift */; };
 		79CDFF4A288D2BA30022F4DA /* GoalsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF49288D2BA30022F4DA /* GoalsListInteractor.swift */; };
@@ -21,6 +25,7 @@
 		79CDFF55288D2CC00022F4DA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF54288D2CC00022F4DA /* NetworkManager.swift */; };
 		79CDFF57288D2CC80022F4DA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF56288D2CC80022F4DA /* DataManager.swift */; };
 		79CDFF59288D2D070022F4DA /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF58288D2D070022F4DA /* Goals.swift */; };
+		79CDFF5F288D3A020022F4DA /* AquaLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF5E288D3A020022F4DA /* AquaLevelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,10 @@
 		7978BB1C288D1CE800B49BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7978BB1F288D1CE800B49BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7978BB21288D1CE800B49BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798D0BE1288D3B880056A3B5 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		798D0BE3288D3EE80056A3B5 /* AquaLevelInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaLevelInteractor.swift; sourceTree = "<group>"; };
+		798D0BE5288D3EF50056A3B5 /* AquaLevelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaLevelPresenter.swift; sourceTree = "<group>"; };
+		798D0BE7288D3F060056A3B5 /* AquaLevelConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaLevelConfigurator.swift; sourceTree = "<group>"; };
 		79CDFF45288D2B8E0022F4DA /* GoalsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListViewController.swift; sourceTree = "<group>"; };
 		79CDFF47288D2B970022F4DA /* GoalsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListPresenter.swift; sourceTree = "<group>"; };
 		79CDFF49288D2BA30022F4DA /* GoalsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListInteractor.swift; sourceTree = "<group>"; };
@@ -40,6 +49,7 @@
 		79CDFF54288D2CC00022F4DA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		79CDFF56288D2CC80022F4DA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		79CDFF58288D2D070022F4DA /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		79CDFF5E288D3A020022F4DA /* AquaLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaLevelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,8 @@
 		7978BB0F288D1CE600B49BC2 /* TrainingApp */ = {
 			isa = PBXGroup;
 			children = (
+				79CDFF5B288D2F1E0022F4DA /* AquaLevel */,
+				79CDFF5A288D2F100022F4DA /* Timer */,
 				79CDFF44288D2AAA0022F4DA /* GoalsList */,
 				79CDFF51288D2C500022F4DA /* Storyboard */,
 				79CDFF4F288D2C360022F4DA /* Models */,
@@ -137,6 +149,25 @@
 				7978BB1C288D1CE800B49BC2 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		79CDFF5A288D2F100022F4DA /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				798D0BE1288D3B880056A3B5 /* TimerViewController.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		79CDFF5B288D2F1E0022F4DA /* AquaLevel */ = {
+			isa = PBXGroup;
+			children = (
+				79CDFF5E288D3A020022F4DA /* AquaLevelViewController.swift */,
+				798D0BE3288D3EE80056A3B5 /* AquaLevelInteractor.swift */,
+				798D0BE5288D3EF50056A3B5 /* AquaLevelPresenter.swift */,
+				798D0BE7288D3F060056A3B5 /* AquaLevelConfigurator.swift */,
+			);
+			path = AquaLevel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +246,15 @@
 				7978BB1B288D1CE600B49BC2 /* TrainingApp.xcdatamodeld in Sources */,
 				79CDFF4A288D2BA30022F4DA /* GoalsListInteractor.swift in Sources */,
 				79CDFF4C288D2BB50022F4DA /* GoalsListConfigurator.swift in Sources */,
+				798D0BE4288D3EE80056A3B5 /* AquaLevelInteractor.swift in Sources */,
 				7978BB11288D1CE600B49BC2 /* AppDelegate.swift in Sources */,
 				79CDFF4E288D2BE00022F4DA /* GoalsListRouter.swift in Sources */,
+				798D0BE6288D3EF50056A3B5 /* AquaLevelPresenter.swift in Sources */,
+				798D0BE8288D3F060056A3B5 /* AquaLevelConfigurator.swift in Sources */,
+				79CDFF5F288D3A020022F4DA /* AquaLevelViewController.swift in Sources */,
 				7978BB13288D1CE600B49BC2 /* SceneDelegate.swift in Sources */,
 				79CDFF46288D2B8E0022F4DA /* GoalsListViewController.swift in Sources */,
+				798D0BE2288D3B880056A3B5 /* TimerViewController.swift in Sources */,
 				79CDFF48288D2B970022F4DA /* GoalsListPresenter.swift in Sources */,
 				79CDFF59288D2D070022F4DA /* Goals.swift in Sources */,
 			);
