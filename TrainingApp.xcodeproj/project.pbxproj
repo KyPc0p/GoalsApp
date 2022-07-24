@@ -13,14 +13,13 @@
 		7978BB1B288D1CE600B49BC2 /* TrainingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7978BB19288D1CE600B49BC2 /* TrainingApp.xcdatamodeld */; };
 		7978BB1D288D1CE800B49BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7978BB1C288D1CE800B49BC2 /* Assets.xcassets */; };
 		7978BB20288D1CE800B49BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7978BB1E288D1CE800B49BC2 /* LaunchScreen.storyboard */; };
+		798703D4288D61E3008629A9 /* TimerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798703D3288D61E3008629A9 /* TimerPresenter.swift */; };
+		798703D6288D61EA008629A9 /* TimerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798703D5288D61EA008629A9 /* TimerInteractor.swift */; };
+		798703D8288D61F7008629A9 /* TimerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798703D7288D61F7008629A9 /* TimerConfigurator.swift */; };
 		798D0BE2288D3B880056A3B5 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE1288D3B880056A3B5 /* TimerViewController.swift */; };
 		798D0BE4288D3EE80056A3B5 /* AquaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE3288D3EE80056A3B5 /* AquaInteractor.swift */; };
 		798D0BE6288D3EF50056A3B5 /* AquaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE5288D3EF50056A3B5 /* AquaPresenter.swift */; };
 		798D0BE8288D3F060056A3B5 /* AquaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BE7288D3F060056A3B5 /* AquaConfigurator.swift */; };
-		798D0BEB288D40D40056A3B5 /* AquaSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BEA288D40D40056A3B5 /* AquaSettingsViewController.swift */; };
-		798D0BED288D40E60056A3B5 /* AquaSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BEC288D40E60056A3B5 /* AquaSettingsPresenter.swift */; };
-		798D0BEF288D40F00056A3B5 /* AquaSettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BEE288D40F00056A3B5 /* AquaSettingsInteractor.swift */; };
-		798D0BF1288D40FD0056A3B5 /* AquaSettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BF0288D40FD0056A3B5 /* AquaSettingsConfigurator.swift */; };
 		798D0BF3288D410F0056A3B5 /* AquaSettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BF2288D410F0056A3B5 /* AquaSettingsRouter.swift */; };
 		798D0BF5288D44370056A3B5 /* AquaAddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BF4288D44370056A3B5 /* AquaAddPresenter.swift */; };
 		798D0BF8288D44550056A3B5 /* AquaAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798D0BF7288D44550056A3B5 /* AquaAddViewController.swift */; };
@@ -47,14 +46,13 @@
 		7978BB1C288D1CE800B49BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7978BB1F288D1CE800B49BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7978BB21288D1CE800B49BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798703D3288D61E3008629A9 /* TimerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPresenter.swift; sourceTree = "<group>"; };
+		798703D5288D61EA008629A9 /* TimerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInteractor.swift; sourceTree = "<group>"; };
+		798703D7288D61F7008629A9 /* TimerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerConfigurator.swift; sourceTree = "<group>"; };
 		798D0BE1288D3B880056A3B5 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		798D0BE3288D3EE80056A3B5 /* AquaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaInteractor.swift; sourceTree = "<group>"; };
 		798D0BE5288D3EF50056A3B5 /* AquaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaPresenter.swift; sourceTree = "<group>"; };
 		798D0BE7288D3F060056A3B5 /* AquaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaConfigurator.swift; sourceTree = "<group>"; };
-		798D0BEA288D40D40056A3B5 /* AquaSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSettingsViewController.swift; sourceTree = "<group>"; };
-		798D0BEC288D40E60056A3B5 /* AquaSettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSettingsPresenter.swift; sourceTree = "<group>"; };
-		798D0BEE288D40F00056A3B5 /* AquaSettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSettingsInteractor.swift; sourceTree = "<group>"; };
-		798D0BF0288D40FD0056A3B5 /* AquaSettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSettingsConfigurator.swift; sourceTree = "<group>"; };
 		798D0BF2288D410F0056A3B5 /* AquaSettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSettingsRouter.swift; sourceTree = "<group>"; };
 		798D0BF4288D44370056A3B5 /* AquaAddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaAddPresenter.swift; sourceTree = "<group>"; };
 		798D0BF7288D44550056A3B5 /* AquaAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaAddViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +100,7 @@
 		7978BB0F288D1CE600B49BC2 /* TrainingApp */ = {
 			isa = PBXGroup;
 			children = (
-				798D0BE9288D40620056A3B5 /* AquaSettings */,
-				79CDFF5B288D2F1E0022F4DA /* AquaLevel */,
+				79CDFF5B288D2F1E0022F4DA /* Aqua */,
 				798D0BF6288D44400056A3B5 /* AquaAdd */,
 				79CDFF5A288D2F100022F4DA /* Timer */,
 				79CDFF44288D2AAA0022F4DA /* GoalsList */,
@@ -115,17 +112,6 @@
 				7978BB19288D1CE600B49BC2 /* TrainingApp.xcdatamodeld */,
 			);
 			path = TrainingApp;
-			sourceTree = "<group>";
-		};
-		798D0BE9288D40620056A3B5 /* AquaSettings */ = {
-			isa = PBXGroup;
-			children = (
-				798D0BEA288D40D40056A3B5 /* AquaSettingsViewController.swift */,
-				798D0BEC288D40E60056A3B5 /* AquaSettingsPresenter.swift */,
-				798D0BEE288D40F00056A3B5 /* AquaSettingsInteractor.swift */,
-				798D0BF0288D40FD0056A3B5 /* AquaSettingsConfigurator.swift */,
-			);
-			path = AquaSettings;
 			sourceTree = "<group>";
 		};
 		798D0BF6288D44400056A3B5 /* AquaAdd */ = {
@@ -200,11 +186,14 @@
 			isa = PBXGroup;
 			children = (
 				798D0BE1288D3B880056A3B5 /* TimerViewController.swift */,
+				798703D3288D61E3008629A9 /* TimerPresenter.swift */,
+				798703D5288D61EA008629A9 /* TimerInteractor.swift */,
+				798703D7288D61F7008629A9 /* TimerConfigurator.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
 		};
-		79CDFF5B288D2F1E0022F4DA /* AquaLevel */ = {
+		79CDFF5B288D2F1E0022F4DA /* Aqua */ = {
 			isa = PBXGroup;
 			children = (
 				79CDFF5E288D3A020022F4DA /* AquaViewController.swift */,
@@ -213,7 +202,7 @@
 				798D0BE7288D3F060056A3B5 /* AquaConfigurator.swift */,
 				798D0BF2288D410F0056A3B5 /* AquaSettingsRouter.swift */,
 			);
-			path = AquaLevel;
+			path = Aqua;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,22 +277,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				798D0BF8288D44550056A3B5 /* AquaAddViewController.swift in Sources */,
+				798703D4288D61E3008629A9 /* TimerPresenter.swift in Sources */,
 				79CDFF55288D2CC00022F4DA /* NetworkManager.swift in Sources */,
 				798D0BF3288D410F0056A3B5 /* AquaSettingsRouter.swift in Sources */,
 				79CDFF57288D2CC80022F4DA /* DataManager.swift in Sources */,
 				7978BB1B288D1CE600B49BC2 /* TrainingApp.xcdatamodeld in Sources */,
 				79CDFF4A288D2BA30022F4DA /* GoalsListInteractor.swift in Sources */,
 				798D0BF5288D44370056A3B5 /* AquaAddPresenter.swift in Sources */,
-				798D0BEF288D40F00056A3B5 /* AquaSettingsInteractor.swift in Sources */,
 				798D0BFC288D44680056A3B5 /* AquaAddRouter.swift in Sources */,
-				798D0BF1288D40FD0056A3B5 /* AquaSettingsConfigurator.swift in Sources */,
 				79CDFF4C288D2BB50022F4DA /* GoalsListConfigurator.swift in Sources */,
 				798D0BE4288D3EE80056A3B5 /* AquaInteractor.swift in Sources */,
 				7978BB11288D1CE600B49BC2 /* AppDelegate.swift in Sources */,
+				798703D6288D61EA008629A9 /* TimerInteractor.swift in Sources */,
 				79CDFF4E288D2BE00022F4DA /* GoalsListRouter.swift in Sources */,
 				798D0BE6288D3EF50056A3B5 /* AquaPresenter.swift in Sources */,
-				798D0BED288D40E60056A3B5 /* AquaSettingsPresenter.swift in Sources */,
 				798D0BE8288D3F060056A3B5 /* AquaConfigurator.swift in Sources */,
+				798703D8288D61F7008629A9 /* TimerConfigurator.swift in Sources */,
 				79CDFF5F288D3A020022F4DA /* AquaViewController.swift in Sources */,
 				7978BB13288D1CE600B49BC2 /* SceneDelegate.swift in Sources */,
 				79CDFF46288D2B8E0022F4DA /* GoalsListViewController.swift in Sources */,
@@ -312,7 +301,6 @@
 				798D0BFE288D44710056A3B5 /* AquaAddConfigurator.swift in Sources */,
 				79CDFF59288D2D070022F4DA /* Goals.swift in Sources */,
 				798D0BFA288D445E0056A3B5 /* AquaAddInteractor.swift in Sources */,
-				798D0BEB288D40D40056A3B5 /* AquaSettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
