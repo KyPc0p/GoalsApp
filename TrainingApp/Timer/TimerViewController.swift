@@ -13,29 +13,33 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var minuteTextField: UITextField!
     @IBOutlet weak var secondTextField: UITextField!
     
-    var timerViewModel: TimerViewModel!
+    var timerViewModel: TimerViewModelProtocol! {
+        didSet {
+            hourTextField.text = timerViewModel.hours.appendZeroes()
+            minuteTextField.text = timerViewModel.minutes.appendZeroes()
+            secondTextField.text = timerViewModel.seconds.appendZeroes()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.timerViewModel = TimerViewModel()
+        timerViewModel = TimerViewModel(timer: Timer(hours: 00, minutes: 00, seconds: 01))
         
         [hourTextField, minuteTextField, secondTextField].forEach {
             $0?.attributedPlaceholder = NSAttributedString(string: "00", attributes: [NSAttributedString.Key.font: UIFont(name: "Kohinoor Gujarati Bold", size: 60.0)!, NSAttributedString.Key.foregroundColor: UIColor.black])
             $0?.delegate = self
         }
         
-        self.timerViewModel.getHours().bind { hours in
-            self.hourTextField.text = hours.appendZeroes()
-        }
-        
-        self.timerViewModel.getMinutes().bind { minutes in
-            self.minuteTextField.text = minutes.appendZeroes()
-        }
-        
-        self.timerViewModel.getSeconds().bind { seconds in
-            self.secondTextField.text = seconds.appendZeroes()
-            print(seconds)
-        }
+//        timerViewModel.getHours()
+//
+//
+//        timerViewModel.getMinutes { minutes in
+//            self.minuteTextField.text = minutes.appendZeroes()
+//        }
+//
+//        timerViewModel.getSeconds { seconds in
+//            self.secondTextField.text = seconds.appendZeroes()
+//        }
     }
     
     @objc func textFieldInputChanged(_ textField: UITextField) {
@@ -49,24 +53,21 @@ class TimerViewController: UIViewController {
         } else if textField == minuteTextField {
             
             guard let minutes = Int(text) else { return }
-            timerViewModel.setMinutes(to: minutes)
+//            timerViewModel.setMinutes(to: minutes)
             
         } else if textField == secondTextField {
             
             guard let seconds = Int(text) else { return }
-            timerViewModel.setSeconds(to: seconds)
+//            timerViewModel.setSeconds(to: seconds)
             
         }
         
     }
     
-    
-    
     @IBAction func startTimer(_ sender: Any) {
     }
     
 }
-
 
 //MARK: - UITextFieldDelegate
 extension TimerViewController: UITextFieldDelegate {
