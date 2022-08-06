@@ -13,77 +13,72 @@ protocol TimerViewModelProtocol {
     var seconds: Int { get }
     
     func setHours(to value: Int)
-//    func setSeconds(to value: Int)
-//    func setMinutes(to value: Int)
+    func setSeconds(to value: Int)
+    func setMinutes(to value: Int)
     
-    func getHours() -> Int
-    func getMinutes() -> Int
-    func getSeconds() -> Int
-    
+    var viewModelDidChange:((TimerViewModelProtocol) -> Void)? { get set }
     init(timer: Timer)
 }
 
 class TimerViewModel: TimerViewModelProtocol {
-   
     var timer = Timer()
     
     var hours: Int {
         get {
-            DataManager.shared.getValue(for: self.hours.appendZeroes())
+            timer.hours
+            //            DataManager.shared.getValue(for: hours.appendZeroes())
         } set {
-            DataManager.shared.setValue(for: hours.appendZeroes(), with: newValue)
+            //            DataManager.shared.setValue(for: hours.appendZeroes(), with: newValue)
         }
     }
     var minutes: Int {
-        timer.minutes
+        get {
+            timer.minutes
+        } set {
+            timer.minutes = newValue
+            viewModelDidChange?(self)
+        }
     }
     var seconds: Int {
-        timer.seconds
+        get {
+            timer.seconds
+        } set {
+            timer.seconds = newValue
+            viewModelDidChange?(self)
+        }
     }
     
+    var viewModelDidChange: ((TimerViewModelProtocol) -> Void)?
     
     //MARK: - SetMethods
     func setHours(to value: Int) {
-        self.hours = value
+        self.timer.hours = value
+    }
+    
+    func setMinutes(to value: Int) {
+        var newMinutes = value
+        if (value >= 60) {
+            newMinutes -= 60
+            hours += 1
+        }
+        
+        self.minutes = newMinutes
     }
 
-//    func setMinutes(to value: Int) {
-//        var newMinutes = value
-//        if (value >= 60) {
-//            newMinutes -= 60
-//            hours += 1
-//        }
-//
-//        self.minutes = newMinutes
-//    }
-//
-//    func setSeconds(to value: Int) {
-//        var newSeconds = value
-//
-//        if (value >= 60) {
-//            newSeconds -= 60
-//            minutes += 1
-//        }
-//
-//        if minutes >= 60 {
-//            minutes -= 60
-//            hours += 1
-//        }
-//
-//        self.seconds = newSeconds
-//    }
-    
-    //MARK: - Get Methods
-    func getHours() -> Int {
-        self.hours
-    }
-    
-    func getMinutes() -> Int{
-        self.minutes
-    }
-    
-    func getSeconds() -> Int{
-        self.seconds
+    func setSeconds(to value: Int) {
+        var newSeconds = value
+
+        if (value >= 60) {
+            newSeconds -= 60
+            minutes += 1
+        }
+
+        if minutes >= 60 {
+            minutes -= 60
+            hours += 1
+        }
+
+        self.seconds = newSeconds
     }
     
     required init(timer: Timer) {
@@ -91,6 +86,7 @@ class TimerViewModel: TimerViewModelProtocol {
     }
 }
 
+//MARK: - Extantion
 extension Int {
     func appendZeroes() -> String{
         if (self < 10) {
