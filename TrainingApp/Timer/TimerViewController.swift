@@ -15,7 +15,7 @@ class TimerViewController: UIViewController {
     
     var timerViewModel: TimerViewModelProtocol! {
         didSet {
-            timerViewModel.viewModelDidChange = { viewModel in
+            timerViewModel.viewModelDidChange = { [unowned self] viewModel in
                 self.setHoursValue(to: viewModel.hours)
                 self.setMinutesValue(to: viewModel.minutes)
                 self.setSecondsValue(to: viewModel.seconds)
@@ -30,17 +30,15 @@ class TimerViewController: UIViewController {
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        timerViewModel = TimerViewModel(timer: Timer(hours: 01, minutes: 01, seconds: 01))
+        timerViewModel = TimerViewModel(timer: Timer())
         
         [hourTextField, minuteTextField, secondTextField].forEach {
             $0?.attributedPlaceholder = NSAttributedString(string: "00", attributes: [NSAttributedString.Key.font: UIFont(name: "Kohinoor Gujarati Bold", size: 60.0)!, NSAttributedString.Key.foregroundColor: UIColor.black])
             $0?.delegate = self
         }
-        
     }
     
     //MARK: - SetMethods
-    
     //методы работают и сразу передаю данные
     func setHoursValue(to value: Int) {
         hourTextField.text = value.appendZeroes()
@@ -58,23 +56,22 @@ class TimerViewController: UIViewController {
     func textFieldInputChanged(_ textField: UITextField) {
         guard let text = textField.text else { return }
         
-        if textField == hourTextField {
-            
+        switch textField {
+        case hourTextField:
             guard let hours = Int(text) else { return }
             timerViewModel.setHours(to: hours)
             
-        } else if textField == minuteTextField {
-            
+        case minuteTextField:
             guard let minutes = Int(text) else { return }
             timerViewModel.setMinutes(to: minutes)
             
-        } else if textField == secondTextField {
-            
+        case secondTextField:
             guard let seconds = Int(text) else { return }
             timerViewModel.setSeconds(to: seconds)
             
+        default:
+            break
         }
-        
     }
     
     //MARK: - @IBActions
@@ -99,8 +96,10 @@ extension TimerViewController: UITextFieldDelegate {
             textField.text! += string
             self.textFieldInputChanged(textField)
         }
+    
         return newString.length <= maxLenght
     }
+    
    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

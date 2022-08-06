@@ -25,23 +25,25 @@ class TimerViewModel: TimerViewModelProtocol {
     
     var hours: Int {
         get {
-            timer.hours
-            //            DataManager.shared.getValue(for: hours.appendZeroes())
+            return timer.hours
         } set {
-            //            DataManager.shared.setValue(for: hours.appendZeroes(), with: newValue)
+            timer.hours = newValue
+            viewModelDidChange?(self)
         }
     }
+    
     var minutes: Int {
         get {
-            timer.minutes
+            return timer.minutes
         } set {
             timer.minutes = newValue
             viewModelDidChange?(self)
         }
     }
+    
     var seconds: Int {
         get {
-            timer.seconds
+            return timer.seconds
         } set {
             timer.seconds = newValue
             viewModelDidChange?(self)
@@ -52,7 +54,7 @@ class TimerViewModel: TimerViewModelProtocol {
     
     //MARK: - SetMethods
     func setHours(to value: Int) {
-        self.timer.hours = value
+        self.hours = value
     }
     
     func setMinutes(to value: Int) {
@@ -88,7 +90,7 @@ class TimerViewModel: TimerViewModelProtocol {
 
 //MARK: - Extantion
 extension Int {
-    func appendZeroes() -> String{
+    func appendZeroes() -> String {
         if (self < 10) {
             return "0\(self)"
         } else {
