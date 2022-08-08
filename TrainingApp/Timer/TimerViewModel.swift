@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 protocol TimerViewModelProtocol {
     var hours: Int { get }
     var minutes: Int { get }
@@ -15,13 +16,16 @@ protocol TimerViewModelProtocol {
     func setHours(to value: Int)
     func setSeconds(to value: Int)
     func setMinutes(to value: Int)
+    func computeSeconds()
+    
+    func getTime() -> TimerState
     
     var viewModelDidChange:((TimerViewModelProtocol) -> Void)? { get set }
-    init(timer: Timer)
 }
 
 class TimerViewModel: TimerViewModelProtocol {
-    var timer = Timer()
+
+    private var timer: TimerState
     
     var hours: Int {
         get {
@@ -52,9 +56,18 @@ class TimerViewModel: TimerViewModelProtocol {
     
     var viewModelDidChange: ((TimerViewModelProtocol) -> Void)?
     
+    func computeSeconds() {
+        timer.seconds = (hours * 3600) + (minutes * 60) + seconds
+        timer.timeStamp = Date().timeIntervalSince1970
+    }
+    
+    func getTime() -> TimerState {
+        return self.timer
+    }
+
     //MARK: - SetMethods
     func setHours(to value: Int) {
-        self.hours = value
+        hours = value
     }
     
     func setMinutes(to value: Int) {
@@ -64,7 +77,7 @@ class TimerViewModel: TimerViewModelProtocol {
             hours += 1
         }
         
-        self.minutes = newMinutes
+        minutes = newMinutes
     }
 
     func setSeconds(to value: Int) {
@@ -80,12 +93,13 @@ class TimerViewModel: TimerViewModelProtocol {
             hours += 1
         }
 
-        self.seconds = newSeconds
+        seconds = newSeconds
     }
     
-    required init(timer: Timer) {
+    required init(timer: TimerState) {
         self.timer = timer
     }
+    
 }
 
 //MARK: - Extantion
@@ -98,3 +112,4 @@ extension Int {
         }
     }
 }
+
