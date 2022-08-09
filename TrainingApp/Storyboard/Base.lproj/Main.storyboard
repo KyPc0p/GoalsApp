@@ -278,7 +278,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <segue destination="f6F-cE-bx9" kind="show" destinationCreationSelector="openAqua:" animates="NO" id="zvU-F7-TCI"/>
+                                    <segue destination="f6F-cE-bx9" kind="show" destinationCreationSelector="toAddAquaView:" animates="NO" id="zvU-F7-TCI"/>
                                 </connections>
                             </button>
                         </subviews>

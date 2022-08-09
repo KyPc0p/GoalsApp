@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class AquaViewController: UIViewController {
 
@@ -13,5 +14,10 @@ class AquaViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    
+    @IBSegueAction func toAddAquaView(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: ContentView())
+    }
+    
 }
 

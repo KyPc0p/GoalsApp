@@ -29,6 +29,7 @@
 		79CDFF57288D2CC80022F4DA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF56288D2CC80022F4DA /* DataManager.swift */; };
 		79CDFF59288D2D070022F4DA /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF58288D2D070022F4DA /* Goals.swift */; };
 		79CDFF5F288D3A020022F4DA /* AquaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFF5E288D3A020022F4DA /* AquaViewController.swift */; };
+		79D0849928A238C100D1BD48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0849828A238C100D1BD48 /* ContentView.swift */; };
 		79F6341E289BD683005EE0AB /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6341D289BD683005EE0AB /* Box.swift */; };
 		79F63420289BE4AE005EE0AB /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6341F289BE4AE005EE0AB /* TimerState.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		79CDFF56288D2CC80022F4DA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		79CDFF58288D2D070022F4DA /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		79CDFF5E288D3A020022F4DA /* AquaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaViewController.swift; sourceTree = "<group>"; };
+		79D0849828A238C100D1BD48 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79F6341D289BD683005EE0AB /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		79F6341F289BE4AE005EE0AB /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		798D0BF6288D44400056A3B5 /* AquaAdd */ = {
 			isa = PBXGroup;
 			children = (
+				79D0849828A238C100D1BD48 /* ContentView.swift */,
 				798D0BF7288D44550056A3B5 /* AquaAddViewController.swift */,
 				798D0BF4288D44370056A3B5 /* AquaAddViewModel.swift */,
 			);
@@ -284,6 +287,7 @@
 				79F63420289BE4AE005EE0AB /* TimerState.swift in Sources */,
 				798D0BE4288D3EE80056A3B5 /* AquaViewModel.swift in Sources */,
 				79F6341E289BD683005EE0AB /* Box.swift in Sources */,
+				79D0849928A238C100D1BD48 /* ContentView.swift in Sources */,
 				7978BB11288D1CE600B49BC2 /* AppDelegate.swift in Sources */,
 				793F42F328A1030B00433D26 /* TimerCircleViewController.swift in Sources */,
 				79CDFF4E288D2BE00022F4DA /* GoalsListRouter.swift in Sources */,
