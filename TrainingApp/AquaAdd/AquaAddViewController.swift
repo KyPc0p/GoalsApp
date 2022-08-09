@@ -13,7 +13,7 @@ class AquaAddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        aquaSlider.transform = CGAffineTransform(rotationAngle: CGFloat.pi / -2)
+ 
     }
     
 
