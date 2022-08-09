@@ -135,13 +135,13 @@ class TimerCircleViewController: UIViewController {
         let arcPath = UIBezierPath(arcCenter: CGPoint(x: timerView.frame.height / 2, y: timerView.frame.width / 2), radius: radius, startAngle: 0, endAngle: 360.degreeFromRad(),clockwise: true)
         //форма для линии
         timerTrackLayer.path = arcPath.cgPath
-        timerTrackLayer.strokeColor = UIColor.blue.cgColor
+        timerTrackLayer.strokeColor = UIColor.systemCyan.cgColor
         timerTrackLayer.lineWidth = 20
         timerTrackLayer.fillColor = UIColor.clear.cgColor
         timerTrackLayer.lineCap = .round
         
         timerCircleFillLayer.path = arcPath.cgPath
-        timerCircleFillLayer.strokeColor = UIColor.black.cgColor
+        timerCircleFillLayer.strokeColor = UIColor.systemBlue.cgColor
         timerCircleFillLayer.lineWidth = 21
         timerCircleFillLayer.fillColor = UIColor.clear.cgColor
         timerCircleFillLayer.lineCap = .round

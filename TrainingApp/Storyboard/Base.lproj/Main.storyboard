@@ -322,7 +322,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="lj2-z7-Uxs" firstAttribute="centerX" secondItem="WxR-yu-Tgv" secondAttribute="centerX" id="5QG-By-lPr"/>
                                             <constraint firstAttribute="width" secondItem="WxR-yu-Tgv" secondAttribute="height" multiplier="1:1" id="She-QH-PaQ"/>
