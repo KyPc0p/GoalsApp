@@ -37,10 +37,10 @@ struct Home: View {
                 ZStack(alignment: .bottom) {
                     
                     Rectangle()
-                        .fill(Color.indigo.opacity(0.15))
+                        .fill(Color.blue.opacity(0.15))
                     
                     Rectangle()
-                        .fill(Color.indigo)
+                        .fill(Color.blue)
                         .frame(height: sliderHeight)
                 }
                 .frame(width: 120, height: maxHeight)

@@ -161,7 +161,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I3-g3-FXh">
                                 <rect key="frame" x="107" y="694" width="200" height="50"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Hdu-bE-8Ol"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="c86-B2-g2T"/>
@@ -181,7 +181,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M5f-Qx-XfZ"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="M5f-Qx-XfZ" firstAttribute="trailing" secondItem="Z2n-TC-eg8" secondAttribute="trailing" constant="20" id="1Xa-te-jcw"/>
                             <constraint firstItem="5I3-g3-FXh" firstAttribute="centerX" secondItem="M5f-Qx-XfZ" secondAttribute="centerX" id="1Z4-zs-O84"/>
@@ -283,7 +283,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YcR-vH-yzM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pnK-JV-zDX" firstAttribute="leading" secondItem="YcR-vH-yzM" secondAttribute="leading" constant="107" id="CBh-aW-irW"/>
                             <constraint firstItem="YcR-vH-yzM" firstAttribute="trailing" secondItem="7zd-df-Lau" secondAttribute="trailing" constant="20" id="E9o-V6-w2x"/>
@@ -322,7 +322,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstItem="lj2-z7-Uxs" firstAttribute="centerX" secondItem="WxR-yu-Tgv" secondAttribute="centerX" id="5QG-By-lPr"/>
                                             <constraint firstAttribute="width" secondItem="WxR-yu-Tgv" secondAttribute="height" multiplier="1:1" id="She-QH-PaQ"/>
@@ -419,7 +419,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z8f-dQ-ihV"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="Aav-Mg-lYG" firstAttribute="centerX" secondItem="z8f-dQ-ihV" secondAttribute="centerX" id="8Gm-Ld-m24"/>
                             <constraint firstItem="im6-mh-2J0" firstAttribute="leading" secondItem="z8f-dQ-ihV" secondAttribute="leading" constant="24" id="Hyi-KY-OGq"/>
@@ -482,17 +482,17 @@
         <image name="text.badge.checkmark.rtl" catalog="system" width="128" height="109"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <image name="wake" catalog="system" width="128" height="121"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
