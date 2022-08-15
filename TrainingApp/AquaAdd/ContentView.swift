@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         
         Home()
@@ -21,6 +22,8 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct Home: View {
+    
+    @Environment(\.dismiss) private var dismiss  //ios15
     
     @State var maxHeight: CGFloat = UIScreen.main.bounds.height / 2
     
@@ -55,7 +58,6 @@ struct Home: View {
                         .background(Color.white)
                         .cornerRadius(10)
                         .padding(.vertical, 50)
-//                        .offset(y: sliderHeight < maxHeight - 110 ? -sliderHeight : -maxHeight + 110 )
                         .offset(y: -sliderHeight)
                         
                     ,alignment: .bottom
@@ -77,7 +79,6 @@ struct Home: View {
                         let progress = sliderHeight / maxHeight
                         
                         sliderProgress = progress <= 1.0 ? progress : 1
-                        print(sliderProgress)
                         
                     }).onEnded({ value in
                         // ограничиваем высоту слайдера
@@ -94,11 +95,17 @@ struct Home: View {
                         
                         sliderProgress = progress <= 1.0 ? progress : 1
                     }))
+                
+                Button("Add") {
+                    dismiss()
+                }
+                .padding()
+                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.mint.ignoresSafeArea())
             .preferredColorScheme(.dark)
-            .navigationTitle("Aqua")
+            
         }
     }
 }
