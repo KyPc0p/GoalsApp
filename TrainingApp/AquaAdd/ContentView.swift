@@ -25,7 +25,7 @@ struct Home: View {
     
     @Environment(\.dismiss) private var dismiss  //ios15
     
-    @State var maxHeight: CGFloat = UIScreen.main.bounds.height / 2
+    @State var maxHeight: CGFloat = UIScreen.main.bounds.height / 1.8
     
     //Slider cвойства
     @State var sliderProgress: CGFloat = 0
@@ -50,7 +50,7 @@ struct Home: View {
                 .cornerRadius(25)
                 // Конетейнер
                 .overlay(
-                    Text("\(Int(sliderProgress * 100 ))ml")
+                    Text("\(Int(sliderProgress * 500 ))ml")
                         .fontWeight(.semibold)
                         .foregroundColor(.black)
                         .padding(.horizontal,18)
